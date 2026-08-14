@@ -156,8 +156,8 @@ function renderHome() {
 
   app.innerHTML = `
     <section class="hero">
-      <h1>Find your people at Jackson</h1>
-      <p>Every MPP student, searchable by what they actually care about. Not another wall of faces.</p>
+      <h1>Find someone with your policy interests</h1>
+      <p>Search Jackson MPP students by policy area and region.</p>
     </section>
     <section class="filters">
       ${dropdownHtml("dd-policy", "Policy interests", POLICY_TAGS, state.policy)}
