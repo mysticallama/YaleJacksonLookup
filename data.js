@@ -314,7 +314,7 @@ const STUDENTS = [
     policy: ["Security"],
     regions: [],
     specifics: [],
-    blurb: "Military officer who used to serve in the U.S. Marine Corps and worked at the Naval Academy Preparatory School; focus areas not yet listed in his official bio.",
+    blurb: "Military officer who used to serve in the U.S. Marine Corps and worked at the Naval Academy Preparatory School.",
     inferred: true,
   },
   {
