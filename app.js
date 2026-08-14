@@ -79,14 +79,12 @@ function cardHtml(match, opts = {}) {
   const s = match.student;
   const shared = match.policyHits.length + match.regionHits.length;
   const matchNote =
-    opts.wildcard
-      ? `<div class="match-note">Someone new to chat with!</div>`
-      : shared > 0
-        ? `<div class="match-note">${shared} shared interest${shared === 1 ? "" : "s"}</div>`
-        : "";
+    !opts.wildcard && shared > 0
+      ? `<div class="match-note">${shared} shared interest${shared === 1 ? "" : "s"}</div>`
+      : "";
   return `
     <a class="person-card${opts.wildcard ? " wildcard-card" : ""}" href="#/person/${esc(s.slug)}">
-      ${opts.wildcard ? `<span class="wildcard-label">🎲 Out of the blue</span>` : ""}
+      ${opts.wildcard ? `<span class="wildcard-label">🎲 Someone new</span>` : ""}
       <div class="card-top">
         ${avatarHtml(s, false)}
         <div>
@@ -185,7 +183,6 @@ function renderResults() {
       ${
         wildcard
           ? `<div class="wildcard-section">
-               <div class="results-heading">And one from left field</div>
                <div class="wildcard-row">
                  ${cardHtml(wildcard, { wildcard: true })}
                  <button type="button" class="shuffle-btn" id="shuffle">↻ Surprise me again</button>
