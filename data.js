@@ -95,7 +95,7 @@ const STUDENTS = [
     program: "MPP, Class of 2027",
     policy: ["Technology Policy", "AI", "Security"],
     regions: ["East Asia"],
-    specifics: ["U.S.–China competition", "naval warfare", "machine learning in intelligence analysis", "crisis decision-making"],
+    specifics: ["U.S.–China competition", "naval warfare", "machine learning in intelligence analysis", "crisis decision-making", "Mandarin study in Taiwan"],
     blurb: "Veteran from the United States who used to serve in the Marine Corps, worked at the Institute for Global Politics, the Saltzman Institute, and the Cambridge Security Initiative, and co-founded the Samuel B. Griffith Foundation; focused on U.S.–China competition and machine learning in intelligence analysis.",
   },
   {

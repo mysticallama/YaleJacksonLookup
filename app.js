@@ -5,6 +5,7 @@ const app = document.getElementById("app");
 const state = {
   policy: new Set(),
   regions: new Set(),
+  query: "",
   wildcardSlug: null, // sticky until selection changes or shuffle
 };
 
@@ -124,21 +125,62 @@ function dropdownHtml(id, label, tags, selectedSet) {
     </div>`;
 }
 
-function renderHome() {
-  const hasSelection = state.policy.size > 0 || state.regions.size > 0;
-  let resultsHtml;
+function searchHaystack(s) {
+  return [s.name, s.program, s.blurb, ...s.policy, ...s.regions, ...s.specifics]
+    .join(" ")
+    .toLowerCase();
+}
 
-  if (!hasSelection) {
-    resultsHtml = `<div class="empty-note">Pick a policy area or a region and see who shows up.</div>`;
-  } else {
-    const { top, wildcardPool } = getMatches();
-    const wildcard = pickWildcard(wildcardPool);
-    resultsHtml = `
+function renderHome() {
+  app.innerHTML = `
+    <section class="hero">
+      <h1>Find someone with your policy interests</h1>
+      <p>Search Jackson MPP students by policy area and region.</p>
+    </section>
+    <section class="filters">
+      ${dropdownHtml("dd-policy", "Policy interests", POLICY_TAGS, state.policy)}
+      ${dropdownHtml("dd-regions", "Regions", REGION_TAGS, state.regions)}
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Search names, employers, interests..." value="${esc(state.query)}" autocomplete="off">
+      </div>
+    </section>
+    <div class="browse-all-row"><a class="browse-all" href="#/all">or browse all ${STUDENTS.length} students →</a></div>
+    <section class="results" id="results"></section>`;
+
+  wireDropdown("dd-policy", state.policy);
+  wireDropdown("dd-regions", state.regions);
+  document.getElementById("search").addEventListener("input", (e) => {
+    state.query = e.target.value;
+    renderResults();
+  });
+  renderResults();
+}
+
+function renderResults() {
+  const container = document.getElementById("results");
+  const hasTags = state.policy.size > 0 || state.regions.size > 0;
+  const q = state.query.trim().toLowerCase();
+
+  if (!hasTags && !q) {
+    container.innerHTML = `<div class="empty-note">Pick a policy area or a region, or type in the search bar.</div>`;
+    return;
+  }
+
+  let scored = STUDENTS.map(scoreStudent);
+  if (q) scored = scored.filter((m) => searchHaystack(m.student).includes(q));
+
+  let html;
+  if (hasTags) {
+    const top = scored
+      .filter((m) => m.score > 0)
+      .sort((a, b) => b.score - a.score || a.student.name.localeCompare(b.student.name));
+    const wildcard = q ? null : pickWildcard(scored.filter((m) => m.score === 0));
+    html = `
       ${
         top.length
           ? `<div class="results-heading">${top.length} match${top.length === 1 ? "" : "es"}</div>
              <div class="card-grid">${top.map((m) => cardHtml(m)).join("")}</div>`
-          : `<div class="empty-note">No direct matches, but that just means everyone is out of the blue.</div>`
+          : `<div class="empty-note">No matches for that combination.</div>`
       }
       ${
         wildcard
@@ -151,31 +193,33 @@ function renderHome() {
              </div>`
           : ""
       }`;
+  } else {
+    html = scored.length
+      ? `<div class="results-heading">${scored.length} result${scored.length === 1 ? "" : "s"}</div>
+         <div class="card-grid">${scored.map((m) => cardHtml(m)).join("")}</div>`
+      : `<div class="empty-note">No one matches that search.</div>`;
   }
 
-  app.innerHTML = `
-    <section class="hero">
-      <h1>Find someone with your policy interests</h1>
-      <p>Search Jackson MPP students by policy area and region.</p>
-    </section>
-    <section class="filters">
-      ${dropdownHtml("dd-policy", "Policy interests", POLICY_TAGS, state.policy)}
-      ${dropdownHtml("dd-regions", "Regions", REGION_TAGS, state.regions)}
-    </section>
-    <section class="results">${resultsHtml}</section>`;
-
-  wireDropdown("dd-policy", state.policy);
-  wireDropdown("dd-regions", state.regions);
+  container.innerHTML = html;
 
   const shuffle = document.getElementById("shuffle");
   if (shuffle) {
     shuffle.addEventListener("click", () => {
       state.wildcardSlug = null;
-      renderHome();
-      // keep the wildcard in view after re-render
+      renderResults();
       document.querySelector(".wildcard-section")?.scrollIntoView({ block: "center" });
     });
   }
+}
+
+function renderAll() {
+  const zero = (s) => ({ student: s, policyHits: [], regionHits: [], score: 0 });
+  app.innerHTML = `
+    <section class="results">
+      <a class="back-link" href="#/">← Back to search</a>
+      <div class="results-heading">All ${STUDENTS.length} students</div>
+      <div class="card-grid">${STUDENTS.map((s) => cardHtml(zero(s))).join("")}</div>
+    </section>`;
 }
 
 function wireDropdown(id, selectedSet) {
@@ -256,6 +300,9 @@ function route() {
   const personMatch = hash.match(/^#\/person\/([a-z0-9-]+)/);
   if (personMatch) {
     renderProfile(personMatch[1]);
+    window.scrollTo(0, 0);
+  } else if (hash.startsWith("#/all")) {
+    renderAll();
     window.scrollTo(0, 0);
   } else {
     renderHome();

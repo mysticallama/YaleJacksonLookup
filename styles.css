@@ -109,6 +109,26 @@ body {
   border-color: var(--yale);
   color: #fff;
 }
+.search-wrap { flex: 1 1 100%; display: flex; justify-content: center; margin-top: 4px; }
+.search-wrap input {
+  width: min(440px, 100%);
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  outline: none;
+}
+.search-wrap input:focus { border-color: var(--yale-light); }
+.search-wrap input::placeholder { color: var(--muted); }
+
+.browse-all-row { text-align: center; padding-bottom: 8px; }
+.browse-all { color: var(--yale-light); text-decoration: none; font-size: 0.9rem; }
+.browse-all:hover { text-decoration: underline; }
+
 .clear-btn {
   background: none; border: none;
   color: var(--muted);
