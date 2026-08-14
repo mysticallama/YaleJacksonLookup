@@ -291,6 +291,8 @@ body {
 }
 .footer-link { display: block; margin-top: 6px; color: var(--yale-light); text-decoration: none; }
 .footer-link:hover { text-decoration: underline; }
+.footer-email { color: var(--yale-light); text-decoration: none; }
+.footer-email:hover { text-decoration: underline; }
 
 @media (max-width: 600px) {
   .hero { padding: 36px 0 4px; }
