@@ -47,8 +47,7 @@ function getMatches() {
   const scored = STUDENTS.map(scoreStudent);
   const top = scored
     .filter((m) => m.score > 0)
-    .sort((a, b) => b.score - a.score || a.student.name.localeCompare(b.student.name))
-    .slice(0, 5);
+    .sort((a, b) => b.score - a.score || a.student.name.localeCompare(b.student.name));
   const wildcardPool = scored.filter((m) => m.score === 0);
   return { top, wildcardPool };
 }
@@ -137,7 +136,7 @@ function renderHome() {
     resultsHtml = `
       ${
         top.length
-          ? `<div class="results-heading">Your people (${top.length})</div>
+          ? `<div class="results-heading">${top.length} match${top.length === 1 ? "" : "es"}</div>
              <div class="card-grid">${top.map((m) => cardHtml(m)).join("")}</div>`
           : `<div class="empty-note">No direct matches, but that just means everyone is out of the blue.</div>`
       }
