@@ -34,6 +34,7 @@ const REGION_TAGS = [
 const STUDENTS = [
   {
     slug: "hekmat-aboukhater",
+    linkedin: "https://www.linkedin.com/in/hekmataboukhater/",
     email: "hekmat.aboukhater@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Hekmat-Aboukhater-1786595802.jpg",
     name: "Hekmat Aboukhater",
@@ -45,6 +46,7 @@ const STUDENTS = [
   },
   {
     slug: "alex-bare",
+    linkedin: "https://www.linkedin.com/in/alex-bare/",
     email: "alex.bare@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Alex-Bare-1786595795-2.jpg",
     name: "Alex Bare",
@@ -56,6 +58,7 @@ const STUDENTS = [
   },
   {
     slug: "maya-berlinger",
+    linkedin: "https://www.linkedin.com/in/mayaberlinger/",
     email: "maya.berlinger@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Maya-Berlinger-1786595809-2.jpg",
     name: "Maya Berlinger",
@@ -67,6 +70,7 @@ const STUDENTS = [
   },
   {
     slug: "bernard-birikorang",
+    linkedin: "https://www.linkedin.com/in/bernard-birikorang/",
     email: "ben.birikorang@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Bernard-Birikorang-1786595804.jpg",
     name: "Bernard Birikorang",
@@ -78,6 +82,7 @@ const STUDENTS = [
   },
   {
     slug: "kevin-chen",
+    linkedin: "https://www.linkedin.com/in/kevinchenpage/",
     email: "kevin.chen.kc2593@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Kevin-Chen-1786595803-1.jpg",
     name: "Kevin Chen",
@@ -89,6 +94,7 @@ const STUDENTS = [
   },
   {
     slug: "anthony-costanzo",
+    linkedin: "https://www.linkedin.com/in/asc2237/",
     email: "anthony.costanzo@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Anthony-Costanzo-1786595818-1.jpg",
     name: "Anthony Costanzo",
@@ -100,6 +106,7 @@ const STUDENTS = [
   },
   {
     slug: "sarah-coughlin",
+    linkedin: "https://www.linkedin.com/in/sarah-coughlin-abb6093a7/",
     email: "sarah.coughlin@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Sarah-Coughlin-1786595810-2.jpg",
     name: "Sarah Coughlin",
@@ -111,6 +118,7 @@ const STUDENTS = [
   },
   {
     slug: "lisa-de-rafols",
+    linkedin: "https://www.linkedin.com/in/lisaderafols/",
     email: "lisa.derafols@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Lisa-de-Rafols-1786595812-1.jpg",
     name: "Lisa de Ràfols",
@@ -122,6 +130,7 @@ const STUDENTS = [
   },
   {
     slug: "alejandro-dominguez",
+    linkedin: "https://www.linkedin.com/in/aledomcris/",
     email: "alejandro.dominguezcristerna@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Alejandro-Dominguez-1786595796-2.jpg",
     name: "Alejandro Domínguez",
@@ -133,6 +142,7 @@ const STUDENTS = [
   },
   {
     slug: "sherab-dorji",
+    linkedin: "https://www.linkedin.com/in/sherab-dorji/",
     email: "sherab.dorji@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Sherab-Dorji-1786595815-1.jpg",
     name: "Sherab Dorji",
@@ -144,17 +154,19 @@ const STUDENTS = [
   },
   {
     slug: "vaibhav-dutt",
+    linkedin: "https://www.linkedin.com/in/duttvaibhav/",
     email: "vaibhav.dutt@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Vaibhav-Dutt-1786595816-1.jpg",
     name: "Vaibhav Dutt",
     program: "MPP, Class of 2027",
-    policy: ["Urban Policy", "Technology Policy", "Climate"],
+    policy: ["Urban Policy", "Technology Policy", "Climate", "Human Rights"],
     regions: ["South Asia", "Sub-Saharan Africa", "Europe"],
     specifics: ["sustainable urban development", "data governance", "digital rights", "service delivery"],
     blurb: "Lawyer from India who used to work at Athena Infonomics, Belongg, and Fields of View, and co-founded a social impact startup; focused on sustainable urban development, data governance, and digital rights.",
   },
   {
     slug: "camden-dyer",
+    linkedin: "https://www.linkedin.com/in/camden-dyer-56a44a194/",
     email: "camden.dyer@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Camden-Dyer-1786595807-1.jpg",
     name: "Camden Dyer",
@@ -166,6 +178,7 @@ const STUDENTS = [
   },
   {
     slug: "bryn-evans",
+    linkedin: "https://www.linkedin.com/in/brynevans/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Bryn-Evans-1786595721-1.jpg",
     name: "Bryn Evans",
     program: "MPP/MEM, Class of 2027",
@@ -176,6 +189,7 @@ const STUDENTS = [
   },
   {
     slug: "gabriel-falk",
+    linkedin: "https://www.linkedin.com/in/gabriel-falk/",
     email: "gabriel.falk@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Gabriel-Falk-1786595798-1.jpg",
     name: "Gabriel Falk",
@@ -187,6 +201,7 @@ const STUDENTS = [
   },
   {
     slug: "rafael-gonzalez",
+    linkedin: "https://www.linkedin.com/in/rafael-gonzalez-yalempp/",
     email: "rafael.gonzalez.reg53@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Rafael-Gonzalez-1786595819.jpg",
     name: "Rafael Gonzalez",
@@ -198,6 +213,7 @@ const STUDENTS = [
   },
   {
     slug: "liam-graf",
+    linkedin: "https://www.linkedin.com/in/liam-graf-3020791b1/",
     email: "liam.graf@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Liam-Graf-1786595808-2.jpg",
     name: "Liam Graf",
@@ -209,6 +225,7 @@ const STUDENTS = [
   },
   {
     slug: "arunima-gupta",
+    linkedin: "https://www.linkedin.com/in/arunima-gupta-2862651a9/",
     email: "arunima.gupta@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Arunima-Gupta-1786595805.jpg",
     name: "Arunima Gupta",
@@ -220,6 +237,7 @@ const STUDENTS = [
   },
   {
     slug: "trisha-gupta",
+    linkedin: "https://www.linkedin.com/in/trisha-gupta-/",
     email: "trisha.gupta@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Trisha-Gupta-1786595817-1.jpg",
     name: "Trisha Gupta",
@@ -231,6 +249,7 @@ const STUDENTS = [
   },
   {
     slug: "ameya-hadap",
+    linkedin: "https://www.linkedin.com/in/ameya-hadap-7a082214a/",
     email: "ameya.hadap@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Ameya-Hadap-1786595797-2.jpg",
     name: "Ameya Hadap",
@@ -242,6 +261,7 @@ const STUDENTS = [
   },
   {
     slug: "arshia-haque",
+    linkedin: "https://www.linkedin.com/in/arshia-haque/",
     email: "arshia.haque@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Arshia-Haque-1786595799-1.jpg",
     name: "Arshia Haque",
@@ -253,6 +273,7 @@ const STUDENTS = [
   },
   {
     slug: "ryan-hawkins",
+    linkedin: "https://www.linkedin.com/in/ryan-hawkins-5841b0376/",
     email: "ryan.hawkins@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Ryan-Hawkins-1786595814-1.jpg",
     name: "Ryan Hawkins",
@@ -264,6 +285,7 @@ const STUDENTS = [
   },
   {
     slug: "axel-herrera-ramos",
+    linkedin: "https://www.linkedin.com/in/axel-herrera-ramos/",
     email: "axel.herreraramos@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Axel-Herrera-Ramos-1786595804-1.jpg",
     name: "Axel Herrera Ramos",
@@ -275,6 +297,7 @@ const STUDENTS = [
   },
   {
     slug: "jason-hug",
+    linkedin: "https://www.linkedin.com/in/jasonhug/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Jason-Hug-1786595617-1.jpg",
     name: "Jason Hug",
     program: "MPP/JD, Class of 2027",
@@ -285,17 +308,19 @@ const STUDENTS = [
   },
   {
     slug: "priavi-joshi",
+    linkedin: "https://www.linkedin.com/in/priavi-joshi-959b783a8/",
     email: "priavi.joshi@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Priavi-Joshi-1786595818-1.jpg",
     name: "Priavi Joshi",
     program: "MPP, Class of 2027",
-    policy: ["Politics", "International Development", "Social Policy"],
+    policy: ["Politics", "International Development", "Social Policy", "Human Rights"],
     regions: ["South Asia"],
     specifics: ["social movements", "participatory democratic governance", "gender and intersectionality", "community-centered development"],
     blurb: "Development researcher from India who used to work at IDinsight and the Trivedi Centre for Political Data; focused on social movements and participatory governance.",
   },
   {
     slug: "seiyoon-ko",
+    linkedin: "https://www.linkedin.com/in/seiyoonko/",
     email: "seiyoon.ko@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Seiyoon-Ko-1786595816-1.jpg",
     name: "Seiyoon Ko",
@@ -307,6 +332,7 @@ const STUDENTS = [
   },
   {
     slug: "andrzej-korlacki",
+    linkedin: "https://www.linkedin.com/in/andrzej-korlacki-67919b338/",
     email: "andrzej.korlacki@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Andrzej-Korlacki-1786595797.jpg",
     name: "Andrzej Korlacki",
@@ -319,6 +345,7 @@ const STUDENTS = [
   },
   {
     slug: "avia-liberman",
+    linkedin: "https://www.linkedin.com/in/avia-liberman/",
     email: "avia.liberman@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Avia-Liberman-1786595800.jpg",
     name: "Avia Liberman",
@@ -330,6 +357,7 @@ const STUDENTS = [
   },
   {
     slug: "metasebiya-ayele-mamo",
+    linkedin: "https://www.linkedin.com/in/metasebiya-mamo/",
     email: "metasebiya.mamo@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Metasebiya-Ayele-Mamo-1786595809-1.jpg",
     name: "Metasebiya Ayele Mamo",
@@ -341,6 +369,7 @@ const STUDENTS = [
   },
   {
     slug: "nicola-mcpherson",
+    linkedin: "https://www.linkedin.com/in/nicola-m-82abba10a/",
     email: "nicola.mcpherson@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Nicola-McPherson-1786595813.jpg",
     name: "Nicola McPherson",
@@ -352,6 +381,7 @@ const STUDENTS = [
   },
   {
     slug: "paige-miles",
+    linkedin: "https://www.linkedin.com/in/paige-miles-m204218/",
     email: "paige.miles@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Paige-Miles-1786595811.jpg",
     name: "Paige Miles",
@@ -363,6 +393,7 @@ const STUDENTS = [
   },
   {
     slug: "peter-nelson",
+    linkedin: "https://www.linkedin.com/in/peter-nelson-1991vt/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Peter-Nelson-1786595636-1.jpg",
     name: "Peter Nelson",
     program: "MPP/JD",
@@ -373,6 +404,7 @@ const STUDENTS = [
   },
   {
     slug: "jonas-nepozitek",
+    linkedin: "https://www.linkedin.com/in/jonas-nepozitek/",
     email: "jonas.nepozitek@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Jonas-Nepozitek-1786595801-1.jpg",
     name: "Jonas Nepozitek",
@@ -384,6 +416,7 @@ const STUDENTS = [
   },
   {
     slug: "lena-olszewska",
+    linkedin: "https://www.linkedin.com/in/lena-olszewska-83727a15a/",
     email: "lena.olszewska@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Lena-Olszewska-1786595812-2.jpg",
     name: "Lena Olszewska",
@@ -395,6 +428,7 @@ const STUDENTS = [
   },
   {
     slug: "hudson-ozello",
+    linkedin: "https://www.linkedin.com/in/hudsonozello/",
     email: "hudson.ozello@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Hudson-Ozello-1786595807-1.jpg",
     name: "Hudson Ozello",
@@ -406,6 +440,7 @@ const STUDENTS = [
   },
   {
     slug: "federico-perez",
+    linkedin: "https://www.linkedin.com/in/fedeperez1/",
     email: "federico.perez@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Federico-Perez-1786595803.jpg",
     name: "Federico Pérez",
@@ -417,6 +452,7 @@ const STUDENTS = [
   },
   {
     slug: "pankhuri-prasad",
+    linkedin: "https://www.linkedin.com/in/pankhuriprasad/",
     email: "pankhuri.prasad@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Pankhuri-Prasad-1786595811-1.jpg",
     name: "Pankhuri Prasad",
@@ -428,6 +464,7 @@ const STUDENTS = [
   },
   {
     slug: "austin-rose",
+    linkedin: "https://www.linkedin.com/in/austin-rose-20a67a236/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Austin-Rose-1786595624-2.jpg",
     name: "Austin Rose",
     program: "MPP/JD, Class of 2027",
@@ -438,17 +475,19 @@ const STUDENTS = [
   },
   {
     slug: "ana-saenz-de-tejada",
+    linkedin: "https://www.linkedin.com/in/anasaenzdetejada/",
     email: "ana.saenzdetejadagarces@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Ana-Saenz-de-Tejada-1786595795.jpg",
     name: "Ana Sáenz de Tejada",
     program: "MPP, Class of 2027",
-    policy: ["International Development", "AI", "Social Policy"],
+    policy: ["International Development", "AI", "Social Policy", "Human Rights"],
     regions: ["Latin America"],
     specifics: ["program evaluation", "evidence-based social interventions", "AI ethics in public policy"],
     blurb: "Program evaluator from Guatemala who used to work with UN Women and UNHCR; focused on evidence-based social interventions and AI ethics in policy.",
   },
   {
     slug: "michael-thompson",
+    linkedin: "https://www.linkedin.com/in/michael-thompson-85bb3611a/",
     email: "michael.thompson.mkt44@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Michael-Thompson-1786595814.jpg",
     name: "Michael Thompson",
@@ -460,6 +499,7 @@ const STUDENTS = [
   },
   {
     slug: "chang-tu",
+    linkedin: "https://www.linkedin.com/in/tuchang/",
     email: "chang.tu@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Chang-Tu-1786595801.jpg",
     name: "Chang Tu",
@@ -471,6 +511,7 @@ const STUDENTS = [
   },
   {
     slug: "cheney-wen",
+    linkedin: "https://www.linkedin.com/in/cheney-chengjhe-wen/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Cheney-Wen-1786595735-1.jpg",
     name: "Cheney Wen",
     program: "MPP/JD, Class of 2028",
@@ -481,6 +522,7 @@ const STUDENTS = [
   },
   {
     slug: "isaiah-williams",
+    linkedin: "https://www.linkedin.com/in/isaiahawilliams/",
     email: "isaiah.williams@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Isaiah-Williams-1786595806-1.jpg",
     name: "Isaiah Williams",

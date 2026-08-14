@@ -285,6 +285,7 @@ function renderProfile(slug) {
         <div class="profile-actions">
           <a class="bio-link" href="https://jackson.yale.edu/person/${esc(s.slug)}/" target="_blank" rel="noopener">Full bio on jackson.yale.edu ↗</a>
           ${s.email ? `<a class="bio-link contact" href="mailto:${esc(s.email)}">✉ ${esc(s.email)}</a>` : ""}
+          ${s.linkedin ? `<a class="bio-link contact" href="${esc(s.linkedin)}" target="_blank" rel="noopener">LinkedIn ↗</a>` : ""}
         </div>
       </div>
     </div>`;
