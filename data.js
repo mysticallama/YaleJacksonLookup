@@ -11,6 +11,7 @@ const POLICY_TAGS = [
   "Health",
   "Human Rights",
   "International Development",
+  "Peacebuilding",
   "Politics",
   "Security",
   "Social Policy",
@@ -34,30 +35,33 @@ const REGION_TAGS = [
 const STUDENTS = [
   {
     slug: "hekmat-aboukhater",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/hekmataboukhater/",
     email: "hekmat.aboukhater@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Hekmat-Aboukhater-1786595802.jpg",
     name: "Hekmat Aboukhater",
     program: "MPP, Class of 2027",
-    policy: ["Foreign Policy", "International Development", "Economics"],
+    policy: ["Foreign Policy", "International Development", "Economics", "Peacebuilding"],
     regions: ["MENA", "Europe", "North America"],
     specifics: ["foreign policy", "international economics", "multinational institutions", "development"],
     blurb: "Foreign policy researcher from Aleppo, Syria, who used to work at the Quincy Institute, the UN Department of Peacebuilding and Political Affairs, and Young Voices Debates; focused on international economics and multinational institutions.",
   },
   {
     slug: "alex-bare",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/alex-bare/",
     email: "alex.bare@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Alex-Bare-1786595795-2.jpg",
     name: "Alex Bare",
     program: "MPP, Class of 2027",
-    policy: ["Security", "Human Rights", "Foreign Policy"],
+    policy: ["Security", "Human Rights", "Foreign Policy", "Peacebuilding"],
     regions: ["Latin America", "Europe", "MENA"],
     specifics: ["armed conflict resolution", "illicit economies", "human rights", "U.S. foreign policy"],
     blurb: "Conflict and human rights researcher from Iowa who used to work at the Washington Office on Latin America, Foreign Policy for America's NextGen Initiative, and as a Fulbright in Colombia; focused on armed conflict resolution and illicit economies in Colombia, Cuba, and Venezuela.",
   },
   {
     slug: "maya-berlinger",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/mayaberlinger/",
     email: "maya.berlinger@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Maya-Berlinger-1786595809-2.jpg",
@@ -70,6 +74,7 @@ const STUDENTS = [
   },
   {
     slug: "bernard-birikorang",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/bernard-birikorang/",
     email: "ben.birikorang@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Bernard-Birikorang-1786595804.jpg",
@@ -82,6 +87,7 @@ const STUDENTS = [
   },
   {
     slug: "kevin-chen",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/kevinchenpage/",
     email: "kevin.chen.kc2593@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Kevin-Chen-1786595803-1.jpg",
@@ -94,6 +100,7 @@ const STUDENTS = [
   },
   {
     slug: "anthony-costanzo",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/asc2237/",
     email: "anthony.costanzo@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Anthony-Costanzo-1786595818-1.jpg",
@@ -106,6 +113,7 @@ const STUDENTS = [
   },
   {
     slug: "sarah-coughlin",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/sarah-coughlin-abb6093a7/",
     email: "sarah.coughlin@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Sarah-Coughlin-1786595810-2.jpg",
@@ -118,18 +126,20 @@ const STUDENTS = [
   },
   {
     slug: "lisa-de-rafols",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/lisaderafols/",
     email: "lisa.derafols@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Lisa-de-Rafols-1786595812-1.jpg",
     name: "Lisa de Ràfols",
     program: "MPP, Class of 2027",
-    policy: ["International Development", "Foreign Policy", "Politics", "Climate"],
+    policy: ["International Development", "Foreign Policy", "Politics", "Climate", "Peacebuilding", "Social Policy"],
     regions: ["Latin America"],
     specifics: ["peacebuilding", "political economy", "social protection", "development and diplomacy"],
     blurb: "Development researcher from Nevada who used to work at J-PAL, the City of Los Angeles, a Nevada political campaign, and as a Fulbright in Colombia; focused on peacebuilding and political economy in Latin America.",
   },
   {
     slug: "alejandro-dominguez",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/aledomcris/",
     email: "alejandro.dominguezcristerna@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Alejandro-Dominguez-1786595796-2.jpg",
@@ -142,30 +152,33 @@ const STUDENTS = [
   },
   {
     slug: "sherab-dorji",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/sherab-dorji/",
     email: "sherab.dorji@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Sherab-Dorji-1786595815-1.jpg",
     name: "Sherab Dorji",
-    program: "MPP/MEM, Class of 2028",
-    policy: ["Climate", "Energy", "International Development"],
+    program: "MPP/MEM, Class of 2027",
+    policy: ["Climate", "Energy", "International Development", "Social Policy", "Human Rights"],
     regions: ["South Asia", "Global South"],
     specifics: ["ecosystem management", "locally led climate adaptation", "clean energy access", "land restoration"],
     blurb: "Climate and clean energy practitioner from Bhutan who used to work at Evergreen Economics, the Yale Center for Environmental Law and Policy, and as a Global Resilience Partnership fellow; focused on locally led adaptation and land restoration.",
   },
   {
     slug: "vaibhav-dutt",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/duttvaibhav/",
     email: "vaibhav.dutt@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Vaibhav-Dutt-1786595816-1.jpg",
     name: "Vaibhav Dutt",
     program: "MPP, Class of 2027",
-    policy: ["Urban Policy", "Technology Policy", "Climate", "Human Rights"],
+    policy: ["Urban Policy", "Technology Policy", "Climate", "Human Rights", "Social Policy"],
     regions: ["South Asia", "Sub-Saharan Africa", "Europe"],
     specifics: ["sustainable urban development", "data governance", "digital rights", "service delivery"],
     blurb: "Lawyer from India who used to work at Athena Infonomics, Belongg, and Fields of View, and co-founded a social impact startup; focused on sustainable urban development, data governance, and digital rights.",
   },
   {
     slug: "camden-dyer",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/camden-dyer-56a44a194/",
     email: "camden.dyer@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Camden-Dyer-1786595807-1.jpg",
@@ -178,6 +191,7 @@ const STUDENTS = [
   },
   {
     slug: "bryn-evans",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/brynevans/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Bryn-Evans-1786595721-1.jpg",
     name: "Bryn Evans",
@@ -189,6 +203,7 @@ const STUDENTS = [
   },
   {
     slug: "gabriel-falk",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/gabriel-falk/",
     email: "gabriel.falk@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Gabriel-Falk-1786595798-1.jpg",
@@ -201,6 +216,7 @@ const STUDENTS = [
   },
   {
     slug: "rafael-gonzalez",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/rafael-gonzalez-yalempp/",
     email: "rafael.gonzalez.reg53@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Rafael-Gonzalez-1786595819.jpg",
@@ -213,6 +229,7 @@ const STUDENTS = [
   },
   {
     slug: "liam-graf",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/liam-graf-3020791b1/",
     email: "liam.graf@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Liam-Graf-1786595808-2.jpg",
@@ -225,6 +242,7 @@ const STUDENTS = [
   },
   {
     slug: "arunima-gupta",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/arunima-gupta-2862651a9/",
     email: "arunima.gupta@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Arunima-Gupta-1786595805.jpg",
@@ -237,6 +255,7 @@ const STUDENTS = [
   },
   {
     slug: "trisha-gupta",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/trisha-gupta-/",
     email: "trisha.gupta@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Trisha-Gupta-1786595817-1.jpg",
@@ -249,6 +268,7 @@ const STUDENTS = [
   },
   {
     slug: "ameya-hadap",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/ameya-hadap-7a082214a/",
     email: "ameya.hadap@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Ameya-Hadap-1786595797-2.jpg",
@@ -261,6 +281,7 @@ const STUDENTS = [
   },
   {
     slug: "arshia-haque",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/arshia-haque/",
     email: "arshia.haque@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Arshia-Haque-1786595799-1.jpg",
@@ -273,6 +294,7 @@ const STUDENTS = [
   },
   {
     slug: "ryan-hawkins",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/ryan-hawkins-5841b0376/",
     email: "ryan.hawkins@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Ryan-Hawkins-1786595814-1.jpg",
@@ -285,6 +307,7 @@ const STUDENTS = [
   },
   {
     slug: "axel-herrera-ramos",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/axel-herrera-ramos/",
     email: "axel.herreraramos@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Axel-Herrera-Ramos-1786595804-1.jpg",
@@ -297,6 +320,7 @@ const STUDENTS = [
   },
   {
     slug: "jason-hug",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/jasonhug/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Jason-Hug-1786595617-1.jpg",
     name: "Jason Hug",
@@ -308,6 +332,7 @@ const STUDENTS = [
   },
   {
     slug: "priavi-joshi",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/priavi-joshi-959b783a8/",
     email: "priavi.joshi@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Priavi-Joshi-1786595818-1.jpg",
@@ -320,6 +345,7 @@ const STUDENTS = [
   },
   {
     slug: "seiyoon-ko",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/seiyoonko/",
     email: "seiyoon.ko@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Seiyoon-Ko-1786595816-1.jpg",
@@ -332,6 +358,7 @@ const STUDENTS = [
   },
   {
     slug: "andrzej-korlacki",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/andrzej-korlacki-67919b338/",
     email: "andrzej.korlacki@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Andrzej-Korlacki-1786595797.jpg",
@@ -345,18 +372,20 @@ const STUDENTS = [
   },
   {
     slug: "avia-liberman",
+    summer: "Junior fellow in the Atlantic Council's Middle East Programs.",
     linkedin: "https://www.linkedin.com/in/avia-liberman/",
     email: "avia.liberman@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Avia-Liberman-1786595800.jpg",
     name: "Avia Liberman",
     program: "MPP, Class of 2027",
-    policy: ["Economics", "International Development"],
+    policy: ["Economics", "International Development", "Peacebuilding", "Human Rights"],
     regions: ["MENA"],
     specifics: ["fiscal policy", "labor market reform", "trade policy", "post-conflict economic design"],
     blurb: "Economist who used to work at Israel's Ministry of Finance and the OECD and founded Itutim; focused on fiscal policy, labor market reform, and post-conflict economic design in Israel and Palestine.",
   },
   {
     slug: "metasebiya-ayele-mamo",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/metasebiya-mamo/",
     email: "metasebiya.mamo@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Metasebiya-Ayele-Mamo-1786595809-1.jpg",
@@ -369,6 +398,7 @@ const STUDENTS = [
   },
   {
     slug: "nicola-mcpherson",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/nicola-m-82abba10a/",
     email: "nicola.mcpherson@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Nicola-McPherson-1786595813.jpg",
@@ -381,6 +411,7 @@ const STUDENTS = [
   },
   {
     slug: "paige-miles",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/paige-miles-m204218/",
     email: "paige.miles@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Paige-Miles-1786595811.jpg",
@@ -393,6 +424,7 @@ const STUDENTS = [
   },
   {
     slug: "peter-nelson",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/peter-nelson-1991vt/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Peter-Nelson-1786595636-1.jpg",
     name: "Peter Nelson",
@@ -404,6 +436,7 @@ const STUDENTS = [
   },
   {
     slug: "jonas-nepozitek",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/jonas-nepozitek/",
     email: "jonas.nepozitek@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Jonas-Nepozitek-1786595801-1.jpg",
@@ -416,6 +449,7 @@ const STUDENTS = [
   },
   {
     slug: "lena-olszewska",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/lena-olszewska-83727a15a/",
     email: "lena.olszewska@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Lena-Olszewska-1786595812-2.jpg",
@@ -428,6 +462,7 @@ const STUDENTS = [
   },
   {
     slug: "hudson-ozello",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/hudsonozello/",
     email: "hudson.ozello@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Hudson-Ozello-1786595807-1.jpg",
@@ -440,6 +475,7 @@ const STUDENTS = [
   },
   {
     slug: "federico-perez",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/fedeperez1/",
     email: "federico.perez@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Federico-Perez-1786595803.jpg",
@@ -452,6 +488,7 @@ const STUDENTS = [
   },
   {
     slug: "pankhuri-prasad",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/pankhuriprasad/",
     email: "pankhuri.prasad@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Pankhuri-Prasad-1786595811-1.jpg",
@@ -464,6 +501,7 @@ const STUDENTS = [
   },
   {
     slug: "austin-rose",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/austin-rose-20a67a236/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Austin-Rose-1786595624-2.jpg",
     name: "Austin Rose",
@@ -475,6 +513,7 @@ const STUDENTS = [
   },
   {
     slug: "ana-saenz-de-tejada",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/anasaenzdetejada/",
     email: "ana.saenzdetejadagarces@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Ana-Saenz-de-Tejada-1786595795.jpg",
@@ -487,6 +526,7 @@ const STUDENTS = [
   },
   {
     slug: "michael-thompson",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/michael-thompson-85bb3611a/",
     email: "michael.thompson.mkt44@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Michael-Thompson-1786595814.jpg",
@@ -499,6 +539,7 @@ const STUDENTS = [
   },
   {
     slug: "chang-tu",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/tuchang/",
     email: "chang.tu@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Chang-Tu-1786595801.jpg",
@@ -511,6 +552,7 @@ const STUDENTS = [
   },
   {
     slug: "cheney-wen",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/cheney-chengjhe-wen/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Cheney-Wen-1786595735-1.jpg",
     name: "Cheney Wen",
@@ -522,6 +564,7 @@ const STUDENTS = [
   },
   {
     slug: "isaiah-williams",
+    summer: "",
     linkedin: "https://www.linkedin.com/in/isaiahawilliams/",
     email: "isaiah.williams@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Isaiah-Williams-1786595806-1.jpg",

@@ -272,6 +272,14 @@ function renderProfile(slug) {
           </div>
         </div>
         <p class="profile-blurb">${esc(s.blurb)}</p>
+        ${
+          s.summer
+            ? `<div class="summer-box">
+                 <div class="summer-label">☀ What I did this summer</div>
+                 <div>${esc(s.summer)}</div>
+               </div>`
+            : ""
+        }
         <div class="profile-section-label">Policy interests</div>
         <div class="tag-row">${s.policy.map((t) => tagHtml(t, false, false)).join("") || "none listed"}</div>
         <div class="profile-section-label">Regions</div>
