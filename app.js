@@ -128,10 +128,13 @@ function dropdownHtml(id, label, tags, selectedSet) {
     </div>`;
 }
 
+// lowercase and strip accents so "jonas" matches "Jonáš" and "dominguez" matches "Domínguez"
+function norm(s) {
+  return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
 function searchHaystack(s) {
-  return [s.name, s.program, s.blurb, ...s.policy, ...s.regions, ...s.specifics]
-    .join(" ")
-    .toLowerCase();
+  return norm([s.name, s.program, s.blurb, ...s.policy, ...s.regions, ...s.specifics].join(" "));
 }
 
 function renderHome() {
@@ -162,7 +165,7 @@ function renderHome() {
 function renderResults() {
   const container = document.getElementById("results");
   const hasTags = state.policy.size > 0 || state.regions.size > 0;
-  const q = state.query.trim().toLowerCase();
+  const q = norm(state.query.trim());
 
   if (!hasTags && !q) {
     container.innerHTML = `<div class="empty-note">Pick a policy area or a region, or type in the search bar.</div>`;

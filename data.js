@@ -446,7 +446,7 @@ const STUDENTS = [
     linkedin: "https://www.linkedin.com/in/jonas-nepozitek/",
     email: "jonas.nepozitek@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Jonas-Nepozitek-1786595801-1.jpg",
-    name: "Jonas Nepozitek",
+    name: "Jonáš Nepožitek",
     program: "MPP, Class of 2027",
     policy: ["AI", "Economics", "Security", "Technology Policy"],
     regions: ["North America", "Europe"],
