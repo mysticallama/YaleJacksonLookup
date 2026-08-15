@@ -275,7 +275,7 @@ function renderProfile(slug) {
         ${
           s.summer
             ? `<div class="summer-box">
-                 <div class="summer-label">☀ What I did this summer</div>
+                 <div class="summer-label">☀ What ${esc(s.name.split(" ")[0])} did this summer</div>
                  <div>${esc(s.summer)}</div>
                </div>`
             : ""
