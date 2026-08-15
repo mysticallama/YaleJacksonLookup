@@ -308,6 +308,13 @@ body {
 }
 .footer-link { display: block; margin-top: 6px; color: var(--yale-light); text-decoration: none; }
 .footer-link:hover { text-decoration: underline; }
+.btn-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  vertical-align: -2px;
+  margin-right: 6px;
+}
 .footer-email { color: var(--yale-light); text-decoration: none; }
 .footer-email:hover { text-decoration: underline; }
 
