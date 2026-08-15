@@ -95,8 +95,8 @@ const STUDENTS = [
     program: "MPP, Class of 2027",
     policy: ["AI", "Technology Policy", "Security"],
     regions: ["East Asia", "North America"],
-    specifics: ["AI influence operations", "cybersecurity", "technology governance", "generative AI risks"],
-    blurb: "Taiwanese-American technology policy researcher who used to work as a data scientist in U.S. intelligence and national security; focused on AI influence operations, cybersecurity, and Taiwan's digital sovereignty.",
+    specifics: ["epistemic risk in AI", "countering disinformation", "AI governance", "cybersecurity", "Taiwan's digital sovereignty"],
+    blurb: "Technology policy researcher who used to work as a data scientist in U.S. intelligence and national security; focused on epistemic risk in AI, countering disinformation, cybersecurity, and making AI work for everyone.",
   },
   {
     slug: "anthony-costanzo",
