@@ -440,6 +440,8 @@ const STUDENTS = [
   },
   {
     slug: "jonas-nepozitek",
+    electives: "Macroeconomics and Security Policy, Defense Innovation in the US.",
+    groups: "YJIA; Blue Center Research Assistant; Teaching Fellow for *Intelligence, Espionage, and American Foreign Policy*.",
     summer: "Business development and market research with Forward Horizon Group in Kyiv, Ukraine, plus field research on technology transfer among frontline states.",
     linkedin: "https://www.linkedin.com/in/jonas-nepozitek/",
     email: "jonas.nepozitek@yale.edu",

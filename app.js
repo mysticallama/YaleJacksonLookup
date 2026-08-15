@@ -36,6 +36,11 @@ function esc(s) {
   })[c]);
 }
 
+// escape, then allow *text* as italics (used in the profile info boxes)
+function fmt(s) {
+  return esc(s).replace(/\*([^*]+)\*/g, "<em>$1</em>");
+}
+
 // ---------- Matching ----------
 
 function scoreStudent(s) {
@@ -276,7 +281,7 @@ function renderProfile(slug) {
           s.summer
             ? `<div class="summer-box">
                  <div class="summer-label">☀ What ${esc(s.name.split(" ")[0])} did this summer</div>
-                 <div>${esc(s.summer)}</div>
+                 <div>${fmt(s.summer)}</div>
                </div>`
             : ""
         }
@@ -284,7 +289,7 @@ function renderProfile(slug) {
           s.electives
             ? `<div class="electives-box">
                  <div class="electives-label">📚 Favorite electives</div>
-                 <div>${esc(s.electives)}</div>
+                 <div>${fmt(s.electives)}</div>
                </div>`
             : ""
         }
@@ -292,7 +297,7 @@ function renderProfile(slug) {
           s.groups
             ? `<div class="groups-box">
                  <div class="groups-label">👥 Clubs and fellowships</div>
-                 <div>${esc(s.groups)}</div>
+                 <div>${fmt(s.groups)}</div>
                </div>`
             : ""
         }
