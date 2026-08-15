@@ -399,6 +399,7 @@ const STUDENTS = [
   },
   {
     slug: "nicola-mcpherson",
+    whatsapp: "+61407711694",
     electives: "Interpersonal and Group Dynamics, Renewable Energy Project Finance, and The Diploma Divide in Western Politics.",
     groups: "Deitz Global Affairs and the Environment Student Fellow.",
     summer: "Joined the international team at the Center for Climate and Energy Solutions (C2ES) in Washington, D.C., working on international climate policy.",
