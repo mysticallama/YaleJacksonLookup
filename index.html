@@ -16,10 +16,25 @@
 
   <main id="app" class="wrap"></main>
 
+  <section class="contact-section">
+    <div class="wrap">
+      <div class="contact-card">
+        <div class="contact-heading">Suggestions or questions?</div>
+        <form id="contact-form" autocomplete="off">
+          <input type="text" name="_honey" style="display:none" tabindex="-1">
+          <input type="email" name="email" id="contact-email" placeholder="Your email" required>
+          <textarea name="message" id="contact-message" placeholder="Your message" rows="3" required></textarea>
+          <button type="submit" id="contact-submit">Send</button>
+          <div id="contact-status" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <div class="wrap">
       Built from the public Yale Jackson School student directory. Not affiliated with Yale.
-      Suggestions or questions? Contact <a class="footer-email" href="mailto:kevin.chen.kc2593@yale.edu">kevin.chen.kc2593@yale.edu</a>
+      You can also email <a class="footer-email" href="mailto:kevin.chen.kc2593@yale.edu">kevin.chen.kc2593@yale.edu</a> directly.
       <a class="footer-link" href="https://github.com/mysticallama/YaleJacksonLookup" target="_blank" rel="noopener">View on GitHub ↗</a>
     </div>
   </footer>

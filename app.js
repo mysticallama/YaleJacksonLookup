@@ -315,5 +315,39 @@ function route() {
   }
 }
 
+// ---------- Contact form ----------
+
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const status = document.getElementById("contact-status");
+    const btn = document.getElementById("contact-submit");
+    const email = document.getElementById("contact-email").value.trim();
+    const message = document.getElementById("contact-message").value.trim();
+    btn.disabled = true;
+    status.textContent = "Sending...";
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/kevin.chen.kc2593@yale.edu", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          email: email,
+          message: message,
+          _replyto: email,
+          _subject: "JacksonLookup message",
+          _captcha: "false",
+        }),
+      });
+      if (!res.ok) throw new Error("send failed");
+      status.textContent = "Sent! Thanks for the note.";
+      contactForm.reset();
+    } catch (err) {
+      status.textContent = "Something went wrong. Please email kevin.chen.kc2593@yale.edu directly.";
+    }
+    btn.disabled = false;
+  });
+}
+
 window.addEventListener("hashchange", route);
 route();

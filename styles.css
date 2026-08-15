@@ -298,6 +298,49 @@ body {
 }
 .bio-link:hover { background: var(--yale-light); }
 
+/* Contact form */
+.contact-section { padding: 8px 0 40px; }
+.contact-card {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+.contact-heading { font-weight: 700; color: var(--yale); margin-bottom: 12px; text-align: center; }
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  color: var(--text);
+  margin-bottom: 10px;
+  outline: none;
+  resize: vertical;
+}
+#contact-form input[type="email"]:focus,
+#contact-form textarea:focus { border-color: var(--yale-light); }
+#contact-submit {
+  display: block;
+  width: 100%;
+  background: var(--yale);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+#contact-submit:hover { background: var(--yale-light); }
+#contact-submit:disabled { opacity: 0.6; cursor: default; }
+#contact-status { text-align: center; font-size: 0.85rem; color: var(--muted); margin-top: 8px; min-height: 1.2em; }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
