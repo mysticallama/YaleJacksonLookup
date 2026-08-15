@@ -399,6 +399,7 @@ const STUDENTS = [
   },
   {
     slug: "nicola-mcpherson",
+    electives: "Interpersonal and Group Dynamics, Renewable Energy Project Finance, and The Diploma Divide in Western Politics.",
     groups: "Deitz Global Affairs and the Environment Student Fellow.",
     summer: "Joined the international team at the Center for Climate and Energy Solutions (C2ES) in Washington, D.C., working on international climate policy.",
     linkedin: "https://www.linkedin.com/in/nicola-m-82abba10a/",
@@ -409,7 +410,7 @@ const STUDENTS = [
     policy: ["Climate", "Energy", "Economics"],
     regions: ["Oceania"],
     specifics: ["energy sector emissions", "economic incentives for climate action", "public institutions"],
-    blurb: "Climate policy specialist from Australia who used to work in the Department of the Prime Minister and Cabinet and the Department of Climate Change, Energy, the Environment and Water, and represented Australia at the IPCC; focused on energy emissions and economic incentives for climate action. Favorite electives so far: Interpersonal and Group Dynamics, Renewable Energy Project Finance, and The Diploma Divide in Western Politics.",
+    blurb: "Climate policy specialist from Australia who used to work in the Department of the Prime Minister and Cabinet and the Department of Climate Change, Energy, the Environment and Water, and represented Australia at the IPCC; focused on energy emissions and economic incentives for climate action.",
   },
   {
     slug: "paige-miles",

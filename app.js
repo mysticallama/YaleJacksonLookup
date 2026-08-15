@@ -281,6 +281,14 @@ function renderProfile(slug) {
             : ""
         }
         ${
+          s.electives
+            ? `<div class="electives-box">
+                 <div class="electives-label">📚 Favorite electives</div>
+                 <div>${esc(s.electives)}</div>
+               </div>`
+            : ""
+        }
+        ${
           s.groups
             ? `<div class="groups-box">
                  <div class="groups-label">👥 Clubs and fellowships</div>
