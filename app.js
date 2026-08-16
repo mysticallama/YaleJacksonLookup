@@ -182,7 +182,7 @@ function renderSpotlight(pickNew = true) {
   // negative delay keeps the bar in phase with the rotation clock across re-renders
   const elapsed = Math.min(SPOTLIGHT_SECONDS - 0.05, (Date.now() - spotlightLast) / 1000);
   el.innerHTML = `
-    <div class="spotlight-label">Meet a Jacksonite</div>
+    <div class="spotlight-label">Spotlight</div>
     ${profileCardHtml(s)}
     <div class="spotlight-progress"><div class="spotlight-progress-fill" style="animation-delay: -${elapsed.toFixed(2)}s"></div></div>`;
 }
