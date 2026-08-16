@@ -374,7 +374,7 @@ const STUDENTS = [
     slug: "colby-ko",
     whatsapp: "+16173010929",
     summer: "Joined the U.S. Department of Energy's ARPA-E to research how to accelerate the nuclear power industry.",
-    groups: "Leader of the veterans club; cross-country skiing, golf, and tennis.",
+    groups: "Leader of the Jackson Veterans Club; cross-country skiing, golf, and tennis.",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Colby-Ko-1786854931-2.jpg",
     name: "Colby Ko",
     program: "MPP/MBA, Class of 2027",
