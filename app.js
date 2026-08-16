@@ -158,17 +158,22 @@ function renderHome() {
   wireDropdown("dd-regions", state.regions);
   document.getElementById("search").addEventListener("input", (e) => {
     state.query = e.target.value;
+    syncUrl();
     renderResults();
   });
   renderResults();
   renderSpotlight(false);
+  const spEl = document.getElementById("spotlight");
+  spEl.addEventListener("mouseenter", () => { spotlightHovered = true; });
+  spEl.addEventListener("mouseleave", () => { spotlightHovered = false; });
 }
 
 // ---------- Spotlight ----------
 
 const SPOTLIGHT_SECONDS = 10;
 let spotlightSlug = null;
-let spotlightLast = Date.now();
+let spotlightElapsedMs = 0;
+let spotlightHovered = false;
 
 function renderSpotlight(pickNew = true) {
   const el = document.getElementById("spotlight");
@@ -180,17 +185,22 @@ function renderSpotlight(pickNew = true) {
   }
   spotlightSlug = s.slug;
   // negative delay keeps the bar in phase with the rotation clock across re-renders
-  const elapsed = Math.min(SPOTLIGHT_SECONDS - 0.05, (Date.now() - spotlightLast) / 1000);
+  const elapsed = Math.min(SPOTLIGHT_SECONDS - 0.05, spotlightElapsedMs / 1000);
   el.innerHTML = `
     <div class="spotlight-label">Spotlight</div>
     ${profileCardHtml(s)}
     <div class="spotlight-progress"><div class="spotlight-progress-fill" style="animation-delay: -${elapsed.toFixed(2)}s"></div></div>`;
 }
 
+// rotation clock: ticks every 250ms, pauses while the card is hovered or off-screen
 setInterval(() => {
-  spotlightLast = Date.now();
-  renderSpotlight(true);
-}, SPOTLIGHT_SECONDS * 1000);
+  if (spotlightHovered || !document.getElementById("spotlight")) return;
+  spotlightElapsedMs += 250;
+  if (spotlightElapsedMs >= SPOTLIGHT_SECONDS * 1000) {
+    spotlightElapsedMs = 0;
+    renderSpotlight(true);
+  }
+}, 250);
 
 function renderResults() {
   const container = document.getElementById("results");
@@ -272,12 +282,14 @@ function wireDropdown(id, selectedSet) {
       const tag = chip.dataset.tag;
       selectedSet.has(tag) ? selectedSet.delete(tag) : selectedSet.add(tag);
       state.wildcardSlug = null;
+      syncUrl();
       rerenderKeepingDropdown(id);
     });
   });
   dd.querySelector(".clear-btn").addEventListener("click", () => {
     selectedSet.clear();
     state.wildcardSlug = null;
+    syncUrl();
     rerenderKeepingDropdown(id);
   });
 }
@@ -361,6 +373,16 @@ function profileCardHtml(s) {
 
 // ---------- Router ----------
 
+// keep the URL in sync with the current filters so any filtered view is shareable
+function syncUrl() {
+  const p = new URLSearchParams();
+  if (state.policy.size) p.set("policy", [...state.policy].join(","));
+  if (state.regions.size) p.set("region", [...state.regions].join(","));
+  if (state.query.trim()) p.set("q", state.query.trim());
+  const qs = p.toString();
+  history.replaceState(null, "", qs ? `#/?${qs}` : "#/");
+}
+
 function route() {
   const hash = location.hash || "#/";
   const personMatch = hash.match(/^#\/person\/([a-z0-9-]+)/);
@@ -371,7 +393,15 @@ function route() {
     renderAll();
     window.scrollTo(0, 0);
   } else {
+    // adopt filters from a shared URL; a bare "#/" keeps the in-memory selection
+    if (hash.startsWith("#/?")) {
+      const p = new URLSearchParams(hash.slice(3));
+      state.policy = new Set((p.get("policy") || "").split(",").filter((t) => POLICY_TAGS.includes(t)));
+      state.regions = new Set((p.get("region") || "").split(",").filter((t) => REGION_TAGS.includes(t)));
+      state.query = p.get("q") || "";
+    }
     renderHome();
+    syncUrl();
   }
 }
 
