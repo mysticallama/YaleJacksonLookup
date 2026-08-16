@@ -36,6 +36,7 @@ const REGION_TAGS = [
 const STUDENTS = [
   {
     slug: "hekmat-aboukhater",
+    whatsapp: "+16179010441",
     summer: "Research fellow at the Quincy Institute for Responsible Statecraft.",
     linkedin: "https://www.linkedin.com/in/hekmataboukhater/",
     email: "hekmat.aboukhater@yale.edu",
@@ -49,6 +50,7 @@ const STUDENTS = [
   },
   {
     slug: "alex-bare",
+    whatsapp: "+13522171867",
     summer: "Political and conflict analysis intern with the UN in Dushanbe, Tajikistan, supporting conflict prevention and post-conflict social cohesion.",
     linkedin: "https://www.linkedin.com/in/alex-bare/",
     email: "alex.bare@yale.edu",
@@ -62,6 +64,7 @@ const STUDENTS = [
   },
   {
     slug: "maya-berlinger",
+    whatsapp: "+19144868506",
     summer: "Investment team intern at Anzana Electric Group in Nairobi, supporting hydropower projects across East, Central, and Southern Africa.",
     linkedin: "https://www.linkedin.com/in/mayaberlinger/",
     email: "maya.berlinger@yale.edu",
@@ -75,6 +78,7 @@ const STUDENTS = [
   },
   {
     slug: "bernard-birikorang",
+    whatsapp: "+12036064486",
     summer: "Bekenstein Climate Intern at the Clean Energy States Alliance, supporting its Virtual Power Plant Acceleration Initiative.",
     linkedin: "https://www.linkedin.com/in/bernard-birikorang/",
     email: "ben.birikorang@yale.edu",
@@ -88,6 +92,7 @@ const STUDENTS = [
   },
   {
     slug: "kevin-chen",
+    whatsapp: "+18652350680",
     summer: "Research fellow at the Centre for the Governance of AI (GovAI) in London, evaluating geopolitical bias in large language models with the UK Prime Minister's AI office.",
     linkedin: "https://www.linkedin.com/in/kevinchenpage/",
     email: "kevin.chen.kc2593@yale.edu",
@@ -101,6 +106,7 @@ const STUDENTS = [
   },
   {
     slug: "anthony-costanzo",
+    whatsapp: "+15038080965",
     summer: "Business development and market research with Forward Horizon Group in Kyiv, Ukraine, plus field research on technology transfer among frontline states.",
     linkedin: "https://www.linkedin.com/in/asc2237/",
     email: "anthony.costanzo@yale.edu",
@@ -114,6 +120,7 @@ const STUDENTS = [
   },
   {
     slug: "sarah-coughlin",
+    whatsapp: "+19786542412",
     summer: "",
     linkedin: "https://www.linkedin.com/in/sarah-coughlin-abb6093a7/",
     email: "sarah.coughlin@yale.edu",
@@ -127,6 +134,7 @@ const STUDENTS = [
   },
   {
     slug: "lisa-de-rafols",
+    whatsapp: "+17753760111",
     summer: "Intern at the EBRD in London on the Policy, Strategy, and Delivery team, supporting its expansion into sub-Saharan Africa.",
     linkedin: "https://www.linkedin.com/in/lisaderafols/",
     email: "lisa.derafols@yale.edu",
@@ -140,6 +148,7 @@ const STUDENTS = [
   },
   {
     slug: "alejandro-dominguez",
+    whatsapp: "+12035897840",
     summer: "AI policy intern at the Tony Blair Institute for Global Change in Washington, D.C., working with governments across Latin America and the Caribbean.",
     linkedin: "https://www.linkedin.com/in/aledomcris/",
     email: "alejandro.dominguezcristerna@yale.edu",
@@ -153,6 +162,7 @@ const STUDENTS = [
   },
   {
     slug: "sherab-dorji",
+    whatsapp: "+97517722727",
     summer: "Supported the Bhutan Trust Fund for Environmental Conservation in Thimphu, strengthening monitoring and evaluation of Green Climate Fund and Adaptation Fund investments.",
     linkedin: "https://www.linkedin.com/in/sherab-dorji/",
     email: "sherab.dorji@yale.edu",
@@ -166,6 +176,7 @@ const STUDENTS = [
   },
   {
     slug: "vaibhav-dutt",
+    whatsapp: "+919899093400",
     summer: "",
     linkedin: "https://www.linkedin.com/in/duttvaibhav/",
     email: "vaibhav.dutt@yale.edu",
@@ -179,6 +190,7 @@ const STUDENTS = [
   },
   {
     slug: "camden-dyer",
+    whatsapp: "+17752215076",
     summer: "Intern with UNDP's Inclusive Growth Team in Bangkok, Thailand.",
     linkedin: "https://www.linkedin.com/in/camden-dyer-56a44a194/",
     email: "camden.dyer@yale.edu",
@@ -192,6 +204,7 @@ const STUDENTS = [
   },
   {
     slug: "bryn-evans",
+    whatsapp: "+16043193488",
     summer: "",
     linkedin: "https://www.linkedin.com/in/brynevans/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Bryn-Evans-1786595721-1.jpg",
@@ -204,6 +217,7 @@ const STUDENTS = [
   },
   {
     slug: "gabriel-falk",
+    whatsapp: "+16077937365",
     summer: "Blended Finance team intern at the IFC in Washington, D.C., as part of the World Bank Group Pioneers program.",
     linkedin: "https://www.linkedin.com/in/gabriel-falk/",
     email: "gabriel.falk@yale.edu",
@@ -217,6 +231,7 @@ const STUDENTS = [
   },
   {
     slug: "rafael-gonzalez",
+    whatsapp: "+16177553675",
     summer: "Legal group intern at the Center for AI and Digital Policy.",
     linkedin: "https://www.linkedin.com/in/rafael-gonzalez-yalempp/",
     email: "rafael.gonzalez.reg53@yale.edu",
@@ -230,6 +245,7 @@ const STUDENTS = [
   },
   {
     slug: "liam-graf",
+    whatsapp: "+15105025454",
     summer: "",
     linkedin: "https://www.linkedin.com/in/liam-graf-3020791b1/",
     email: "liam.graf@yale.edu",
@@ -243,6 +259,7 @@ const STUDENTS = [
   },
   {
     slug: "arunima-gupta",
+    whatsapp: "+12034108734",
     summer: "Worked in the CEO's Office at IDinsight in Lusaka, Zambia.",
     linkedin: "https://www.linkedin.com/in/arunima-gupta-2862651a9/",
     email: "arunima.gupta@yale.edu",
@@ -256,6 +273,7 @@ const STUDENTS = [
   },
   {
     slug: "trisha-gupta",
+    whatsapp: "+12815123205",
     summer: "",
     linkedin: "https://www.linkedin.com/in/trisha-gupta-/",
     email: "trisha.gupta@yale.edu",
@@ -269,6 +287,7 @@ const STUDENTS = [
   },
   {
     slug: "ameya-hadap",
+    whatsapp: "+16099039906",
     summer: "Research and editorial fellow at Heatmap News in New York.",
     linkedin: "https://www.linkedin.com/in/ameya-hadap-7a082214a/",
     email: "ameya.hadap@yale.edu",
@@ -282,6 +301,7 @@ const STUDENTS = [
   },
   {
     slug: "arshia-haque",
+    whatsapp: "+14753726431",
     summer: "Built cost-effectiveness methodology for poverty graduation programs at Better Futures Guide, an evaluator guiding donors to high-impact livelihoods charities.",
     linkedin: "https://www.linkedin.com/in/arshia-haque/",
     email: "arshia.haque@yale.edu",
@@ -295,6 +315,7 @@ const STUDENTS = [
   },
   {
     slug: "ryan-hawkins",
+    whatsapp: "+61423057909",
     summer: "",
     linkedin: "https://www.linkedin.com/in/ryan-hawkins-5841b0376/",
     email: "ryan.hawkins@yale.edu",
@@ -308,6 +329,7 @@ const STUDENTS = [
   },
   {
     slug: "axel-herrera-ramos",
+    whatsapp: "+19196991524",
     summer: "",
     linkedin: "https://www.linkedin.com/in/axel-herrera-ramos/",
     email: "axel.herreraramos@yale.edu",
@@ -321,6 +343,7 @@ const STUDENTS = [
   },
   {
     slug: "jason-hug",
+    whatsapp: "+14197990507",
     summer: "",
     linkedin: "https://www.linkedin.com/in/jasonhug/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Jason-Hug-1786595617-1.jpg",
@@ -333,6 +356,7 @@ const STUDENTS = [
   },
   {
     slug: "priavi-joshi",
+    whatsapp: "+918527448100",
     summer: "",
     linkedin: "https://www.linkedin.com/in/priavi-joshi-959b783a8/",
     email: "priavi.joshi@yale.edu",
@@ -346,6 +370,7 @@ const STUDENTS = [
   },
   {
     slug: "seiyoon-ko",
+    whatsapp: "+821027424329",
     summer: "Privacy and Data team at the Center for Democracy and Technology in Washington, D.C., working on consumer privacy and AI-driven advertising.",
     linkedin: "https://www.linkedin.com/in/seiyoonko/",
     email: "seiyoon.ko@yale.edu",
@@ -359,6 +384,7 @@ const STUDENTS = [
   },
   {
     slug: "andrzej-korlacki",
+    whatsapp: "+14028753196",
     summer: "",
     linkedin: "https://www.linkedin.com/in/andrzej-korlacki-67919b338/",
     email: "andrzej.korlacki@yale.edu",
@@ -373,6 +399,7 @@ const STUDENTS = [
   },
   {
     slug: "avia-liberman",
+    whatsapp: "+972542512299",
     summer: "Junior fellow in the Atlantic Council's Middle East Programs.",
     linkedin: "https://www.linkedin.com/in/avia-liberman/",
     email: "avia.liberman@yale.edu",
@@ -386,6 +413,7 @@ const STUDENTS = [
   },
   {
     slug: "metasebiya-ayele-mamo",
+    whatsapp: "+12036764840",
     summer: "",
     linkedin: "https://www.linkedin.com/in/metasebiya-mamo/",
     email: "metasebiya.mamo@yale.edu",
@@ -415,6 +443,7 @@ const STUDENTS = [
   },
   {
     slug: "paige-miles",
+    whatsapp: "+14054204844",
     summer: "",
     linkedin: "https://www.linkedin.com/in/paige-miles-m204218/",
     email: "paige.miles@yale.edu",
@@ -440,6 +469,7 @@ const STUDENTS = [
   },
   {
     slug: "jonas-nepozitek",
+    whatsapp: "+12038096230",
     electives: "Macroeconomics and Security Policy, Defense Innovation in the US.",
     groups: "Yale Journal of International Affairs; Blue Center Research Assistant; Teaching Fellow for *Intelligence, Espionage, and American Foreign Policy*.",
     summer: "Business development and market research with Forward Horizon Group in Kyiv, Ukraine, plus field research on technology transfer among frontline states.",
@@ -455,6 +485,7 @@ const STUDENTS = [
   },
   {
     slug: "lena-olszewska",
+    whatsapp: "+919810207163",
     summer: "Machine learning intern at Atlas AI in Nairobi, modeling health outcomes across Ethiopia, Kenya, and Somalia from satellite imagery.",
     linkedin: "https://www.linkedin.com/in/lena-olszewska-83727a15a/",
     email: "lena.olszewska@yale.edu",
@@ -482,6 +513,7 @@ const STUDENTS = [
   },
   {
     slug: "federico-perez",
+    whatsapp: "+573054073434",
     summer: "Summer consultant at Greenwood Energy; supported the Concordia Amazonas Initiative convening in Leticia, Colombia.",
     linkedin: "https://www.linkedin.com/in/fedeperez1/",
     email: "federico.perez@yale.edu",
@@ -495,6 +527,7 @@ const STUDENTS = [
   },
   {
     slug: "pankhuri-prasad",
+    whatsapp: "+18582579063",
     summer: "Intern at the EBRD in London.",
     linkedin: "https://www.linkedin.com/in/pankhuriprasad/",
     email: "pankhuri.prasad@yale.edu",
@@ -520,6 +553,7 @@ const STUDENTS = [
   },
   {
     slug: "ana-saenz-de-tejada",
+    whatsapp: "+50257238314",
     summer: "Worked at The Rockefeller Foundation in New York on the Strategic Learning and Impact team, including an AI deployment strategy for monitoring, evaluation, and learning.",
     linkedin: "https://www.linkedin.com/in/anasaenzdetejada/",
     email: "ana.saenzdetejadagarces@yale.edu",
@@ -533,6 +567,7 @@ const STUDENTS = [
   },
   {
     slug: "michael-thompson",
+    whatsapp: "+12034196562",
     summer: "Summer investment professional at Allied Climate Partners in New York.",
     linkedin: "https://www.linkedin.com/in/michael-thompson-85bb3611a/",
     email: "michael.thompson.mkt44@yale.edu",
@@ -546,6 +581,7 @@ const STUDENTS = [
   },
   {
     slug: "chang-tu",
+    whatsapp: "+12035076081",
     summer: "Intern in the World Bank's Development Economics Vice Presidency, researching private capital mobilization.",
     linkedin: "https://www.linkedin.com/in/tuchang/",
     email: "chang.tu@yale.edu",
@@ -559,6 +595,7 @@ const STUDENTS = [
   },
   {
     slug: "cheney-wen",
+    whatsapp: "+886916221915",
     summer: "Project on deepening Indo-Pacific security cooperation at Taiwan's National Security Council.",
     linkedin: "https://www.linkedin.com/in/cheney-chengjhe-wen/",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Cheney-Wen-1786595735-1.jpg",
@@ -571,6 +608,7 @@ const STUDENTS = [
   },
   {
     slug: "isaiah-williams",
+    whatsapp: "+19143123439",
     summer: "Policy intern at CEBRI in Rio de Janeiro, working with its North America and Environment and Climate programs.",
     linkedin: "https://www.linkedin.com/in/isaiahawilliams/",
     email: "isaiah.williams@yale.edu",

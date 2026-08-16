@@ -151,6 +151,7 @@ function renderHome() {
       </div>
     </section>
     <div class="browse-all-row"><a class="browse-all" href="#/all">or browse all ${STUDENTS.length} students →</a></div>
+    <section class="spotlight" id="spotlight"></section>
     <section class="results" id="results"></section>`;
 
   wireDropdown("dd-policy", state.policy);
@@ -160,7 +161,28 @@ function renderHome() {
     renderResults();
   });
   renderResults();
+  renderSpotlight(false);
 }
+
+// ---------- Spotlight ----------
+
+let spotlightSlug = null;
+
+function renderSpotlight(pickNew = true) {
+  const el = document.getElementById("spotlight");
+  if (!el) return;
+  let s = pickNew ? null : STUDENTS.find((x) => x.slug === spotlightSlug);
+  if (!s) {
+    const pool = STUDENTS.filter((x) => x.slug !== spotlightSlug);
+    s = pool[Math.floor(Math.random() * pool.length)];
+  }
+  spotlightSlug = s.slug;
+  el.innerHTML = `
+    <div class="spotlight-label">Spotlight</div>
+    ${cardHtml({ student: s, policyHits: [], regionHits: [], score: 0 })}`;
+}
+
+setInterval(() => renderSpotlight(true), 10000);
 
 function renderResults() {
   const container = document.getElementById("results");
