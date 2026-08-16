@@ -488,7 +488,9 @@ const STUDENTS = [
   {
     slug: "lena-olszewska",
     whatsapp: "+919810207163",
-    summer: "Machine learning intern at Atlas AI in Nairobi, modeling health outcomes across Ethiopia, Kenya, and Somalia from satellite imagery.",
+    electives: "Observing Earth from Space; Earth System Science for Public Policy; Inclusive Economic Development.",
+    groups: "Environmental Data Science at Yale (EDSY).",
+    summer: "Machine learning intern with Atlas AI in Nairobi, Kenya, building satellite-imagery models to predict public health outcomes like vaccination rates and anemia prevalence.",
     linkedin: "https://www.linkedin.com/in/lena-olszewska-83727a15a/",
     email: "lena.olszewska@yale.edu",
     photo: "https://jackson.yale.edu/wp-content/uploads/2026/08/Lena-Olszewska-1786595812-2.jpg",
@@ -496,7 +498,7 @@ const STUDENTS = [
     program: "MPP, Class of 2027",
     policy: ["Climate", "International Development", "Social Policy", "Health", "AI"],
     regions: ["South Asia", "Europe", "Global South", "Sub-Saharan Africa"],
-    specifics: ["climate mitigation and social outcomes", "health", "employment", "gender equity"],
+    specifics: ["climate mitigation and social outcomes", "data science", "environmental modelling", "remote sensing and satellite imagery", "health", "gender equity"],
     blurb: "Development professional with Polish roots who used to work at IDinsight, Giving Green, Plan International's EU office, and the British Embassy in Warsaw; focused on climate mitigation and its social outcomes in India.",
   },
   {
