@@ -92,6 +92,8 @@ const STUDENTS = [
   },
   {
     slug: "kevin-chen",
+    electives: "AI, Emerging Technology, and National Power; Managing the Clean Energy Transition; Spies, Cyber, and Statecraft; Stablecoins, Distributed Ledger Technology, and Trade.",
+    groups: "Yale Journal of International Affairs; Yale AI Policy Forum; Digital Ethics Center Policy Fellow; Teaching Fellow for *Intelligence, Espionage, and American Foreign Policy*.",
     whatsapp: "+18652350680",
     summer: "Research fellow at the Centre for the Governance of AI (GovAI) in London, evaluating geopolitical bias in large language models with the UK Prime Minister's AI office.",
     linkedin: "https://www.linkedin.com/in/kevinchenpage/",
