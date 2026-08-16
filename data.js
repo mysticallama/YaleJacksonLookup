@@ -595,7 +595,7 @@ const STUDENTS = [
     groups: "Jackson Soccer; Teaching Fellow for *Applied Methods of Analysis* and *Economics for Global Affairs*.",
     photo: "photos/tom-steer.jpg",
     name: "Tom Steer",
-    program: "MPP",
+    program: "MPP, Class of 2027",
     policy: ["AI", "Security", "Economics", "International Development"],
     regions: ["Europe"],
     specifics: ["frontier AI security", "international security", "inclusive economic development", "technological change and inequality"],
