@@ -151,8 +151,8 @@ function renderHome() {
       </div>
     </section>
     <div class="browse-all-row"><a class="browse-all" href="#/all">or browse all ${STUDENTS.length} students →</a></div>
-    <section class="spotlight" id="spotlight"></section>
-    <section class="results" id="results"></section>`;
+    <section class="results" id="results"></section>
+    <section class="spotlight" id="spotlight"></section>`;
 
   wireDropdown("dd-policy", state.policy);
   wireDropdown("dd-regions", state.regions);
